@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include "bank.h"
+#include "../include/bank.h"
 
 /* 全局变量定义 */
 RECORD rs[N_MAXREC_NO];

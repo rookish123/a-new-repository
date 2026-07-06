@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include "bank.h"
+#include "../include/bank.h"
 
 /* 主菜单 */
 void mainmenu(void) {
@@ -170,7 +170,6 @@ void withdraw(void) {
 /* 查询单账户 */
 void query(void) {
     int accNumber, pos;
-    char pwd[7];
 
     printf("请输入查询账号：");
     scanf("%d", &accNumber);
@@ -183,16 +182,6 @@ void query(void) {
     }
 
     dispAnAccount(pos);
-
-    printf("请输入密码：");
-    scanf("%6s", pwd);
-    while (getchar() != '\n');
-    if (strcmp(rs[pos].accPWD, pwd) != 0) {
-        printf("密码错误，返回主界面。\n");
-        return;
-    }
-
-    printf("账户状态：%s\n", atoi(rs[pos].flag) ? "销户" : "正常");
 }
 
 /* 销户 */

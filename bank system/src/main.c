@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include "bank.h"
+#include "../include/bank.h"
 
 int main(void) {
     char username[32];

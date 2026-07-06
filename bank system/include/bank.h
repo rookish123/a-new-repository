@@ -9,7 +9,7 @@
 
 /* 常量定义 */
 #define N_MAXREC_NO   100
-#define FILE_PATH     "D:\\c语言实践作业\\bank\\account.txt"
+#define FILE_PATH     "D:\\豆包办公\\虚拟办公环境\\工作区\\a-new-repository\\data\\account.txt"
 #define USER_NAME     "admin"
 #define USER_PWD      "admin"
 #define MAX_TRY       3
